@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    font-size: 1.05rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+body {
+    background-image: linear-gradient(90deg, rgb(100, 0, 100),rgb(255, 130, 255),rgb(100, 0, 100));
+}
