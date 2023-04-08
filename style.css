@@ -9,24 +9,24 @@
 }
 
 body {
-    background-image: linear-gradient(90deg, rgb(100, 0, 100),rgb(255, 130, 255),rgb(100, 0, 100));
+    background-image: linear-gradient(90deg, rgb(80, 80, 80),rgb(255, 255, 255),rgb(80, 80, 80));
 }
 
 .main-div {
-    width: 100vh;
+    width: 95%;
     font-size: 14px;
-    max-width: 40em;
+    max-width: 45em;
     margin: 2.5em auto;
 }
 
 .container {
-    width: 100vh;
+    width: 100%;
 }
 
 .sub-container {
-    width: 100vh;
+    width: 100%;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 2fr;
     gap: 2.5em;
 }
 
