@@ -15,7 +15,7 @@ body {
 .main-div {
     width: 100%;
     font-size: 14px;
-    max-width: 60em;
+    max-width: 75em;
     margin: 1.5em auto;
 }
 
@@ -31,7 +31,7 @@ body {
     gap: 1.5em;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 992px) {
     .sub-container {
         display: grid;
         grid-template-columns: 2fr;
@@ -77,11 +77,10 @@ body {
 
 .total-amount-container, .user-amount-container, .output-container, .list {
     background-color: #fff;
-    padding: 1.0em 0.66em;
+    padding: 1.33em 0.66em;
     border-radius: 0.5em;
-    box-shadow: 0px 5px 7.5px rgba(0,0,0,0.4);
-    margin: 0.5em 0;
-    padding: 1.25em;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
+    margin-top: 0.5em;
 }
 
 .total-amount-container p, .user-amount-container p {
@@ -92,5 +91,64 @@ body {
     font-weight: 300;
 }
 
+.output-container span {
+    display: block;
+    text-align: center;
+}
+
+.submit {
+    font-size: 0.75em;
+    margin-top: 0.25em;
+    padding: 0.25em 0.50em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.submit:hover {
+    border-radius: 0.5em;
+    box-shadow: 0px 5px 7.5px rgba(0,0,0,0.4);
+    transition: 0.2s;
+}
+
+.product {
+    font-weight: 500;
+    color: #363d55;
+  }
+
+  .amount {
+    color: #414a67;
+    margin-left: 20%;
+  }
+
+  .icons-container {
+    width: 5em;
+    margin: 1.2em;
+    align-items: center;
+  }
+
+  .product-title {
+    margin-bottom: 1em;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .error {
+    color: #ff465a;
+  }
+  
+  .edit {
+    margin-left: auto;
+  }
+
+  .edit, .delete {
+    background: transparent;
+    cursor: pointer;
+    margin-right: 1.5em;
+    border: none;
+    color: #587ef4;
+  }
 
 
