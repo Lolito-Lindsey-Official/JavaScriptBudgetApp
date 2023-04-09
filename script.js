@@ -1,3 +1,5 @@
+alert("Welcome to my basic budget app!");
+
 /* Grabs all id's from the index.html file */
 let totalAmount = document.getElementById("total-amount");
 let userAmount = document.getElementById("user-amount");
