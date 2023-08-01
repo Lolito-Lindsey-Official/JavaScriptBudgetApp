@@ -1,61 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Basic Budget</title>
+    <title>Budgeting App</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <div class="main-div">
-        <div class="container">
-          <div class="sub-container">
+    <h1>Budgeting App</h1>
 
-            <!-- Budget -->
-            <div class="total-amount-container">
-              <h3>Budget</h3>
-              <p class="hide error" id="budget-error">Value cannot be empty or negative</p>
-              <input type="number" id="total-amount" placeholder="Enter Total Amount"/>
-              <button class="submit" id="total-amount-button">Set Budget</button>
-            </div>
+    <!-- Input fields for income and expenses -->
+    <input id="income" type="number" placeholder="Enter your total income">
+    <input id="expenses" type="number" placeholder="Enter your total expenses">
 
-            <!-- Expenditure -->
-            <div class="user-amount-container">
-              <h3>Expenses</h3>
-              <p class="hide error" id="product-title-error">
-                Values cannot be empty
-              </p>
-              <input type="text" class="product-title" id="product-title" placeholder="Enter Title of Product"/>
-              <input type="number" id="user-amount" placeholder="Enter Cost of Product"/>
-              <button class="submit" id="check-amount">Check Amount</button>
-            </div>
-          </div>
+    <!-- Button to calculate the difference -->
+    <button id="calculate">Calculate</button>
 
-          <!-- Output -->
-          <div class="output-container flex-space">
-            <div>
-              <p>Total Budget</p>
-              <span id="amount">0</span>
-            </div>
-            <div>
-              <p>Expenses</p>
-              <span id="expenditure-value">0</span>
-            </div>
-            <div>
-              <p>Balance</p>
-              <span id="balance-amount">0</span>
-            </div>
-          </div>
-        </div>
+    <!-- Placeholder for result -->
+    <p id="output"></p>
 
-        <!-- List -->
-        <div class="list">
-          <h3>Expense List</h3>
-          <div class="list-container" id="list"></div>
-        </div>
-      </div>
-
-    <script src = "script.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
