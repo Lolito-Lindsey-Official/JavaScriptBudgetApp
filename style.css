@@ -20,4 +20,17 @@ button {
     color: blue;
 }
 
+.budget-container {
+    box-shadow: 0px 0px 50px 13px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 100ms ease-out;
+
+
+
+  }
+  
+  .budget-container:hover {
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3);
+  }
+  
+
 
