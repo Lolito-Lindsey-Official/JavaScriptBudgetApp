@@ -13,7 +13,7 @@ calculate.addEventListener('click', function() {
 
     // Display the result
     if(difference >= 0) {
-        output.innerText = "You have a surplus of $" + difference.toFixed(2);
+        output.innerText = "You have a surplus of $" + difference.toFixed(2); 
     } else {
         output.innerText = "You have a deficit of $" + Math.abs(difference).toFixed(2);
     }
