@@ -10,18 +10,22 @@
       <h1>Budgeting App</h1>
 
       <!-- Input fields for income and expenses -->
+      <label for = "income">Income</label>
       <input id="income" type="number" placeholder="Enter your total income">
+      <!--Display error for income-->
+      <span id = "incomeError" class = "error-note"></span>
+      
+      <label for = "expenses">Expenses</label>
       <input id="expenses" type="number" placeholder="Enter your total expenses">
+      <!--Display error for expenses-->
+      <span id = "expensesError" class = "error-note"></span>
 
       <!-- Button to calculate the difference -->
       <button id="calculate">Calculate</button>
   </div>
 
     <!-- Placeholder for result -->
-
-  <div class = "budget-container">
       <p id="output"></p>
-  </div>
 
     <script src="app.js"></script>
 </body>
