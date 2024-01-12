@@ -16,7 +16,7 @@ calculate.addEventListener('click', function() {
         output.innerText = "You have a surplus of $" + difference.toFixed(2); 
     } 
     else if (difference === 0) {
-        output.innerText = "You have a balanced budget.";
+        output.innerText = `You have a balanced budget.`;
     }
     else {
         output.innerText = "You have a deficit of $" + Math.abs(difference).toFixed(2);
