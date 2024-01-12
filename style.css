@@ -5,32 +5,55 @@ body {
 }
 
 input {
-    margin: 10px;
-    padding: 5px;
+    padding: 10px;
+    width: 25vh;
 }
 
 button {
     margin: 20px;
-    padding: 10px 20px;
+    padding: 10px;
+    width: 25vh;
 }
 
 #output {
     margin-top: 20px;
-    font-size: 24px;
+    font-size: 2.0rem;
     color: blue;
+    text-align: center;
 }
 
 .budget-container {
-    box-shadow: 0px 0px 50px 13px rgba(0, 0, 0, 0.3);
-    transition: box-shadow 100ms ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
 
-
-
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   
   .budget-container:hover {
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 100ms ease-out;
   }
+
+label, #incomeError {
+    margin-bottom: 10px;
+}
+
+.error-note {
+    color: #ff5252; 
+    font-weight: bold;
+    font-size: 1.0rem;
+    margin-top: 10px;   
+}
+
+h1 {
+    font-size: 2.0rem;
+}
   
 
 
