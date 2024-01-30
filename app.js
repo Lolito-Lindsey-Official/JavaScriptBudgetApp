@@ -27,11 +27,13 @@ calculate.addEventListener('click', function() {
     // Cannot have a negative income
     if (totalIncome < 0 || totalExpenses < 0) {
         if (totalIncome < 0) {
+            output.innerText = "";
             incomeError.innerText = "Cannot have a negative income";
         }
     
         // Cannot have a negative expense
         if (totalExpenses < 0) {
+            output.innerText = "";
             expensesError.innerText = "Cannot have a negative expense";
         }
 
@@ -43,10 +45,10 @@ calculate.addEventListener('click', function() {
 
     // Display the result
     if(difference > 0) {
-        output.innerText = `Well done: You have a budget surplus of ${difference.toFixed(2)}.`; 
+        output.innerText = `Awesome! You have a budget surplus of ${difference.toFixed(2)}.`; 
     } 
     else if (difference === 0) {
-        output.innerText = `Notice: You have a balanced budget.`;
+        output.innerText = `Well done. You have a balanced budget.`;
     }
     else {
         output.innerText = `Please note: You have a budget deficit of ${Math.abs(difference).toFixed(2)}.`;
