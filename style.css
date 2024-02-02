@@ -1,31 +1,9 @@
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
-}
-
-input {
-    padding: 10px;
-    width: 100%;
-}
-
-button {
-    margin: 20px;
-    padding: 10px;
-    width: 100%;
-}
-
-#output {
-    margin-top: 20px;
-    font-size: 1.75rem;
-    color: blue;
-    text-align: center;
+    font-size: 12px;
 }
 
 .budget-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     min-width: 400px;
 
     position: absolute;
@@ -33,8 +11,43 @@ button {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
+  .tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+h1 {
+    font-size: 2.0rem;
+    text-align: center;
+}
+
+label {
+    font-size: 1.4rem;
+}
   
-label, #incomeError {
+input {
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    width: 100%;
+    border: 2px solid #000000;
+}
+
+#output {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#calculate {
+    padding: 0.5rem 1.0rem;
+    cursor: pointer;
+}
+
+#incomeError,  #expensesError {
     margin-bottom: 10px;
 }
 
@@ -45,9 +58,6 @@ label, #incomeError {
     margin-top: 10px;   
 }
 
-h1 {
-    font-size: 2.0rem;
-}
   
 
 
