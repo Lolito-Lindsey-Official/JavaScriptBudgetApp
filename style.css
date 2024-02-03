@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     font-size: 12px;
+    
 }
 
 .budget-container {
@@ -12,12 +13,30 @@ body {
     transform: translate(-50%, -50%);
   }
 
+  @media (max-width: 600px) {
+        .budget-container {
+            width: 80%;
+            min-width: 0;
+            padding: 25px;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        input, #calculate {
+            font-size: 1.0rem;
+        }
+  }
+
   .tile {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 10px;
+    background-color: rgb(223, 223, 223);
+    padding: 25px;
   }
 
 h1 {
@@ -34,6 +53,15 @@ input {
     font-size: 1.25rem;
     width: 100%;
     border: 2px solid #000000;
+    margin-bottom: 25px;
+}
+
+#income {
+    background-color: rgba(50, 205, 71, 0.25);
+}
+
+#expenses {
+    background-color: rgba(205, 50, 50, 0.25);
 }
 
 #output {
@@ -43,9 +71,16 @@ input {
 }
 
 #calculate {
-    padding: 0.5rem 1.0rem;
+    padding: 0.75rem 1.5rem;
     cursor: pointer;
+    border: none;
+    transition: 0.2s;
 }
+
+#calculate:hover {
+    background-color: #b9b9b9;
+}
+
 
 #incomeError,  #expensesError {
     margin-bottom: 10px;
