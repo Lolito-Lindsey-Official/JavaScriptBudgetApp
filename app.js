@@ -20,7 +20,7 @@ calculate.addEventListener('click', function() {
         return;
     }
 
-    let difference = totalIncome - totalExpenses; // Calculate the difference
+    const difference = totalIncome - totalExpenses; // Calculate the difference
 
     // Display the result
     if(difference > 0) {
